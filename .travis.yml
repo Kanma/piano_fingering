@@ -1,0 +1,15 @@
+language: python
+python:
+  - '2.7'
+  - '3.6'
+
+script:
+  - python setup.py test
+
+deploy:
+  provider: pypi
+  user: Kanma
+  password:
+    secure: "vQk+kmXThe1zyrEeu64Q+OWT0ca8Vnn3tHXWIRxHr2K2bId/GG8RswM0NEL1JZLgL9eauOBElLa2fwYimzwN4ODU00s2Oe48iBeTqhvkf2rA5XEItLwUpitxcIk9mCjiI17pEKT/5cnLwNj596PDBjcP9zBh6qwmDGSYsRurLTCaV134Ti5zS9FgY0C/Jq11cD0cyHcP6HR79ksCbfkfBxtHy3uk21S/Vi+xfVkhFhvo2J0khzua8E6ot+uOObh8OI8G51ZhII+lVMBget1+6BAYsMMirw6fcjaDoWzpaor+wI7lEkitiAonURE/EwxSo+wXeDxxZpzVX9b4FKNpSnflCvHErw5Jue8XaOm8aI+w8s04QQJmxMkNcLUoNZy790arD37O1GYdRdgz5GgeZ25pYKmtgkxm9KuMhzIp5lDPMIAc2KTywpTao35I0tE86mxGiwubDkDIGvP+OE+ChlWqHgXHM/qZmwWIw4x2AX54VUXT5xc2G0BrSgfxrO1x9op4drQBo0v3Cqpm+nhyCuq9mhlQSdTNo8UseI7TnBqtFius6XfRBiu9ipCgAxt/WGTvrE+VknyZVHVqItavW/CF7u8Q5BHZfxnqcCydYiyFiHe+Hgi+SsW3SBhIAU1pqwE8/p5TvU61Vj4zZ5UDQLWgKJbpIpyK6QZY1v4GPKY="
+  on:
+    tags: true
